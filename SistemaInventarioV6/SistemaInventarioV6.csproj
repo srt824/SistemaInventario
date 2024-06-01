@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <Content Remove="wwwroot\js\Bodega.js" />
+    <Content Remove="wwwroot\js\Categoria.js" />
   </ItemGroup>
 
   <ItemGroup>
@@ -32,10 +33,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Areas\Admin\Views - Copia\" />
-  </ItemGroup>
-
-  <ItemGroup>
+    <None Include="wwwroot\js\categoria.js" />
     <None Include="wwwroot\js\Bodega.js" />
   </ItemGroup>
 

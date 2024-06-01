@@ -10,6 +10,7 @@
   <ItemGroup>
     <Content Remove="wwwroot\js\Bodega.js" />
     <Content Remove="wwwroot\js\Categoria.js" />
+    <Content Remove="wwwroot\js\marca.js" />
   </ItemGroup>
 
   <ItemGroup>
@@ -33,6 +34,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="wwwroot\js\marca.js" />
     <None Include="wwwroot\js\categoria.js" />
     <None Include="wwwroot\js\Bodega.js" />
   </ItemGroup>

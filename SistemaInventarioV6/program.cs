@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using SistemaInventarioV6.AccesoDatos.Data;
+using SistemaInventarioV6.AccesoDatos.Repositorio;
 using SistemaInventarioV6.AccesoDatos.Repositorio.IRepositorio;
 
 namespace SistemaInventarioV6

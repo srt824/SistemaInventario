@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
-    <Nullable>enable</Nullable>
+   
     <ImplicitUsings>enable</ImplicitUsings>
     <UserSecretsId>aspnet-SistemaInventarioV6-b7c631f3-0cfb-4fa5-8af4-b6fd943e7dec</UserSecretsId>
   </PropertyGroup>
@@ -11,6 +11,7 @@
     <Content Remove="wwwroot\js\Bodega.js" />
     <Content Remove="wwwroot\js\Categoria.js" />
     <Content Remove="wwwroot\js\marca.js" />
+    <Content Remove="wwwroot\js\producto.js" />
   </ItemGroup>
 
   <ItemGroup>
@@ -34,9 +35,14 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="wwwroot\js\producto.js" />
     <None Include="wwwroot\js\marca.js" />
     <None Include="wwwroot\js\categoria.js" />
     <None Include="wwwroot\js\Bodega.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\imagenes\producto\" />
   </ItemGroup>
 
 </Project>

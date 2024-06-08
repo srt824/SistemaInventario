@@ -1,11 +1,12 @@
 ﻿using SistemaInventarioV6.AccesoDatos.Data;
+using SistemaInventarioV6.AccesoDatos.Repositorio.IRepositorio;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SistemaInventarioV6.AccesoDatos.Repositorio.IRepositorio
+namespace SistemaInventarioV6.AccesoDatos.Repositorio
 {
     public class UnidadTrabajo : IUnidadTrabajo
     {
@@ -13,6 +14,7 @@ namespace SistemaInventarioV6.AccesoDatos.Repositorio.IRepositorio
         public IBodegaRepositorio Bodega { get; private set; }
         public ICategoriaRepositorio Categoria { get; private set; }
         public IMarcaRepositorio Marca { get; private set; }
+        public IProductoRepositorio Producto { get; private set; }
 
         public UnidadTrabajo(ApplicationDbContext db)
         {
@@ -20,8 +22,9 @@ namespace SistemaInventarioV6.AccesoDatos.Repositorio.IRepositorio
             Bodega = new BodegaRepositorio(_db); // _db es el dbcontext
             Categoria = new CategoriaRepositorio(_db);
             Marca = new MarcaRepositorio(_db);
+            Producto = new ProductoRepositorio(_db);
         }
-        
+
 
         public void Dispose()
         {
